@@ -4,7 +4,9 @@ using System.Text;
 
 namespace LinkList.Classes
 {
-    class Node
+    public class Node
     {
+        public int Value { get; set; }
+        public Node Next { get; set; }
     }
 }
