@@ -1,0 +1,13 @@
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.exe
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.deps.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.runtimeconfig.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.runtimeconfig.dev.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.dll
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\bin\Debug\netcoreapp3.1\ArrayShift.pdb
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.csprojAssemblyReference.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.csproj.CoreCompileInputs.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.AssemblyInfoInputs.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.AssemblyInfo.cs
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.dll
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.pdb
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.genruntimeconfig.cache
