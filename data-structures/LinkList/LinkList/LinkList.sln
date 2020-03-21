@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkList", "LinkList.csproj", "{0665D2CF-AB0A-42F1-8B54-9E7A019F7C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkListTest", "..\LinkListTest\LinkListTest.csproj", "{6BDE156D-5C94-4438-8F74-6E14CCA09126}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30E8962E-B30C-491B-9178-BED2A4BA5CED}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0665D2CF-AB0A-42F1-8B54-9E7A019F7C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0665D2CF-AB0A-42F1-8B54-9E7A019F7C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0665D2CF-AB0A-42F1-8B54-9E7A019F7C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0665D2CF-AB0A-42F1-8B54-9E7A019F7C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDE156D-5C94-4438-8F74-6E14CCA09126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDE156D-5C94-4438-8F74-6E14CCA09126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDE156D-5C94-4438-8F74-6E14CCA09126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDE156D-5C94-4438-8F74-6E14CCA09126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4EF98F2-DA2B-4CC1-9C2E-E2C491E1B152}
+	EndGlobalSection
+EndGlobal
