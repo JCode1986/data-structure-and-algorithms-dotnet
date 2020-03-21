@@ -1,0 +1,13 @@
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.exe
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.deps.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.runtimeconfig.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.runtimeconfig.dev.json
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.dll
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\bin\Debug\netcoreapp3.1\ArrayReverse.pdb
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.csprojAssemblyReference.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.csproj.CoreCompileInputs.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.AssemblyInfoInputs.cache
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.AssemblyInfo.cs
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.dll
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.pdb
+C:\Users\Community\Desktop\VS Repos\data-structures-and-algorigthms-dot-net\challenges\ArrayReverse\obj\Debug\netcoreapp3.1\ArrayReverse.genruntimeconfig.cache
