@@ -4,8 +4,7 @@ using System.Text;
 
 namespace LinkList.Classes
 {
-    class Class1
+    class LinkedList
     {
-
     }
 }
