@@ -24,16 +24,49 @@ namespace LinkedList.Classes
             Head = node;
         }
 
+        /// <summary>
+        /// Returns boolean if node's value is present in linked list
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
 
         public bool Includes(int value)
         {
-            return true;
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            Node Current = Head;
+            while (Current != null)
+            {
+                if (Current.Value == value)
+                {
+                    return true;
+                }
+                Current = Current.Next;
+            }
+            return false;
         }
+
+        /// <summary>
+        /// Returns all node values in linked list as a string
+        /// </summary>
+        /// <returns></returns>
 
         public override string ToString()
         {
-            return "";
-
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            string nodeValues = "";
+            Node Current = Head;
+            while (Current != null)
+            {
+                nodeValues += $"{{{Current.Value}}}-->";
+                Current = Current.Next;
+            }
+            return nodeValues += $"NULL";
         }
     }
 }
