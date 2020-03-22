@@ -10,7 +10,7 @@ namespace LinkListTest
         [Fact]
         public void NodeClassHasValueProperty()
         {
-            Node node = new Node();
+            Node node = new Node(3);
             Assert.IsType<int>(node.Value);
         }
 
@@ -22,8 +22,7 @@ namespace LinkListTest
 
         public void CanGetValueOfValuePropertyInNode(int value)
         {
-            Node node = new Node();
-            node.Value = value;
+            Node node = new Node(value);
             Assert.Equal(value, node.Value);
         }
 
@@ -35,32 +34,22 @@ namespace LinkListTest
 
         public void CanChangeAndSetValueOfValuePropertyInNode(int value)
         {
-            Node node = new Node();
-            node.Value = 999;
+            Node node = new Node(999);
             node.Value = value;
             Assert.Equal(value, node.Value);
         }
 
-        [Fact]
-        public void NodeClassHasNextProperty()
-        {
-            Node node = new Node();
-            Assert.Null(node.Next);
-        }
-
         [Theory]
         [InlineData(23, 32)]
-        [InlineData(420, null)]
+        [InlineData(420, 11)]
         [InlineData(69, 96)]
         [InlineData(1986, 9000)]
 
         public void NextProperyOnNodeCanBeSet(int value1, int value2)
         {
-            Node node1 = new Node();
-            node1.Value = value1;
+            Node node1 = new Node(value1);
 
-            Node node2 = new Node();
-            node2.Value = value2;
+            Node node2 = new Node(value2);
             node1.Next = node2;
 
             Assert.Equal(node1.Next, node2);

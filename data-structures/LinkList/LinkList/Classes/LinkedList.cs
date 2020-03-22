@@ -18,10 +18,7 @@ namespace LinkedList.Classes
         /// <param name="value"></param>
         public void Insert(int value)
         {
-            Node node = new Node();
-            node.Value = value;
-            node.Next = Head;
-            Head = node;
+            Head = new Node(value, Head);
         }
 
         /// <summary>

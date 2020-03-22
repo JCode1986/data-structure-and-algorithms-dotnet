@@ -6,7 +6,12 @@ namespace LinkList.Classes
 {
     public class Node
     {
-        public int Value { get; set; }
-        public Node Next { get; set; }
+        public int Value;
+        public Node Next;
+        public Node(int data, Node next = null)
+        {
+            Value = data;
+            Next = next;
+        }
     }
 }
