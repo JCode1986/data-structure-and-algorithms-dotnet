@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\challenges",
+    "\\challenges\\ArrayBinarySearch",
+    "\\challenges\\ArrayBinarySearch\\BinarySearch",
+    "\\challenges\\ArrayBinarySearch\\image",
+    "\\data-structures\\LinkList"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\challenges\\ArrayBinarySearch\\README.md",
   "PreviewInSolutionExplorer": false
 }
