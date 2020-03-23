@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj": {}
+    "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj": {
+    "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj",
+        "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj",
         "projectName": "LinkListTest",
-        "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj",
+        "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkListTest\\LinkListTest.csproj",
         "packagesPath": "C:\\Users\\Community\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkListTest\\obj\\",
+        "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkListTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj": {
-                "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj"
+              "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj": {
+                "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj": {
+    "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
+        "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
         "projectName": "LinkList",
-        "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
+        "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
         "packagesPath": "C:\\Users\\Community\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\obj\\",
+        "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
