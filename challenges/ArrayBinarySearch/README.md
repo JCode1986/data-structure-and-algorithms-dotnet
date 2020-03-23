@@ -33,8 +33,7 @@ Write a method called `BinarySearch` which takes in 2 parameters: a sorted array
 
 
 ### Whiteboard Visual
-***[Your Whiteboard Image]***
-![Whiteboard]()
+![Whiteboard](./image/wb3.jpg)
 
 
 ---
