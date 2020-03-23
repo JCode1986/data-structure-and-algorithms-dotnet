@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
+      "projectUniqueName": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
       "projectName": "LinkList",
-      "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
+      "projectPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\LinkList.csproj",
       "packagesPath": "C:\\Users\\Community\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\data-structures-and-algorigthms-dot-net\\data-structures\\LinkList\\LinkList\\obj\\",
+      "outputPath": "C:\\Users\\Community\\Desktop\\VS Repos\\dsa\\data-structures\\LinkList\\LinkList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
