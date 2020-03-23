@@ -18,14 +18,32 @@ namespace BinarySearch
 
         public static int ArrayBinarySearch(int[] array, int value)
         {
-
+            //have a start and endpoint
             int min = 0;
             int max = array.Length - 1;
 
+            //loop if start is less than or equal to end 
             while (min <= max)
             {
+                //get middle of array
                 int middle = (min + max) / 2;
-                return value == array[middle] ? middle : (value < array[middle]) ? max = middle - 1 : max = middle - 1;
+
+                //return index if we find a match
+                if (value == array[middle])
+                {
+                    return middle;
+                }
+                //if target value is less than middle value in array, set enpoint to middle - 1
+                else if (value < array[middle])
+                {
+                    max = middle - 1;
+                }
+                //if target value is greater than middle value in array, set start to middle + 1
+                else if (value > array[middle])
+                {
+                    min = middle + 1;
+                }
+
             }
             return -1;
         }
