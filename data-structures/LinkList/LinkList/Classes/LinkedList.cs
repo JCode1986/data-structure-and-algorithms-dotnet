@@ -110,19 +110,16 @@ namespace LinkedList.Classes
             Node current = Head;
             while (current != null)
             {
-/*                if (current.Next.Next == null && current.Value == oldVal)
-                {
-                    Node temp = current.Next;
-                    current.Next = node;
-                    node.Next = temp;
-                    Tail = temp;
-                }*/
                 if (current.Value == oldVal)
                 {
                     Node temp = current.Next;
                     current.Next = node;
                     node.Next = temp;
                 }
+/*                if (Tail.Value == oldVal)
+                {
+                    InsertBefore(Tail.Value, newVal);
+                }*/
                 current = current.Next;
             }
         }
@@ -147,16 +144,15 @@ namespace LinkedList.Classes
             Node node = new Node(newVal);
             while (current != null)
             {
-                if (current.Value == oldVal && current.Next == null)
-                {
-                    current.Next = node;
-                    node.Next = null;
-                }
                 if (current.Value == oldVal)
                 {
                     Node temp = current.Next;
                     current.Next = node;
                     node.Next = temp;
+                }
+                if (Tail.Value == oldVal)
+                {
+                    Append(newVal);
                 }
                 current = current.Next;
             }

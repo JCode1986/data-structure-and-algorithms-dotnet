@@ -208,25 +208,25 @@ namespace LinkListTest
             Assert.Equal(value, expected);
         }
 
-        /*        [Theory]
-                [InlineData(23)]
-                [InlineData(4)]
-                [InlineData(5)]
-                [InlineData(6)]
-                [InlineData(7)]
-                public void CanInsertBeforeASpecificNodeInTheEndOfALinkedList(int value)
-                {
-                    Linklist ll = new Linklist();
-                    ll.Insert(20);
-                    ll.Insert(40);
-                    ll.Insert(69);
-                    ll.Insert(2020);
-                    ll.Insert(123);
-                    ll.Insert(456);
-                    ll.InsertBefore(456, value);
-                    int expected = ll.Head.Next.Next.Next.Value;
-                    Assert.Equal(value, expected);
-                }*/
+        [Theory]
+        [InlineData(23)]
+        [InlineData(4)]
+        [InlineData(5)]
+        [InlineData(6)]
+        [InlineData(7)]
+        public void CanInsertBeforeASpecificNodeInTheEndOfALinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Append(20);
+            ll.Append(40);
+            ll.Append(69);
+            ll.Append(2020);
+            ll.Append(123);
+            ll.Append(456);
+            ll.InsertBefore(456, value);
+            int expected = ll.Head.Next.Next.Next.Next.Next.Value;
+            Assert.Equal(value, expected);
+        }
 
         [Fact]
         public void ThrowsExceptionIfNoHeadWhenCallingInsertAfter()
@@ -242,7 +242,7 @@ namespace LinkListTest
         public void CanInsertANodeAfterWithOnlyOneNodeInLinkedList(int value)
         {
             Linklist ll = new Linklist();
-            ll.Insert(23);
+            ll.Append(23);
             ll.InsertAfter(23, value);
             int actual = ll.Tail.Value;
             int expected = value;
@@ -255,12 +255,12 @@ namespace LinkListTest
         public void CanInsertANodeAfterWithOnlyOneNodeInMiddleOfLinkedList(int value)
         {
             Linklist ll = new Linklist();
-            ll.Insert(23);
-            ll.Insert(232);
-            ll.Insert(2367);
-            ll.Insert(12367);
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            ll.Append(12364);
             ll.InsertAfter(2367, value);
-            int actual = ll.Head.Next.Next.Value;
+            int actual = ll.Head.Next.Next.Next.Value;
             Assert.Equal(value, actual);
         }
 
