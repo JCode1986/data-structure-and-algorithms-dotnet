@@ -33,14 +33,14 @@ namespace LinkedList.Classes
             {
                 throw new Exception("No Head Value");
             }
-            Node Current = Head;
-            while (Current != null)
+            Node current = Head;
+            while (current != null)
             {
-                if (Current.Value == value)
+                if (current.Value == value)
                 {
                     return true;
                 }
-                Current = Current.Next;
+                current = current.Next;
             }
             return false;
         }
@@ -57,11 +57,11 @@ namespace LinkedList.Classes
                 throw new Exception("No Head Value");
             }
             string nodeValues = "";
-            Node Current = Head;
-            while (Current != null)
+            Node current = Head;
+            while (current != null)
             {
-                nodeValues += $"{{{Current.Value}}}-->";
-                Current = Current.Next;
+                nodeValues += $"{{{current.Value}}}-->";
+                current = current.Next;
             }
             return nodeValues += $"NULL";
         }
@@ -72,7 +72,23 @@ namespace LinkedList.Classes
         /// <param name="value"></param>
         public void Append(int value)
         {
-
+            if (Head == null)
+            {
+                Insert(value);
+                return;
+            }
+            Node node = new Node(value);
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Next == null)
+                {
+                    current.Next = node;
+                    node.Next = null;
+                    Tail = node;
+                }
+                current = current.Next;
+            }
         }
 
         /// <summary>

@@ -127,6 +127,7 @@ namespace LinkListTest
             string expected = $"{{{ll.Head.Value}}}-->{{{ll.Head.Next.Value}}}-->{{{ll.Head.Next.Next.Value}}}-->NULL";
             Assert.Equal(actual, expected);
         }
+
         [Fact]
         public void ThrowsExceptionIfNoHeadWhenCallingToString()
         {
@@ -139,6 +140,30 @@ namespace LinkListTest
         {
             Linklist ll = new Linklist();
             Assert.Throws<Exception>(() => ll.Includes(3));
+        }
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
+        public void CanAppendToAnEmptyLinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Append(value);
+            Assert.Equal(value, ll.Head.Value);
+        }
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
+        public void CanAppendToALinkedListWithNodes(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(20);
+            ll.Append(value);
+            int expected = ll.Head.Next.Value;
+            Assert.Equal(value, expected);
         }
     }
 }
