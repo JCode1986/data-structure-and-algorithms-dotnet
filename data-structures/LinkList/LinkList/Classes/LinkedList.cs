@@ -15,7 +15,7 @@ namespace LinkedList.Classes
         /// In: int type
         /// Out: void
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         public void Insert(int value)
         {
             Head = new Node(value, Head);
@@ -24,7 +24,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Returns boolean if node's value is present in linked list
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         /// <returns></returns>
 
         public bool Includes(int value)
@@ -33,14 +33,14 @@ namespace LinkedList.Classes
             {
                 throw new Exception("No Head Value");
             }
-            Node Current = Head;
-            while (Current != null)
+            Node current = Head;
+            while (current != null)
             {
-                if (Current.Value == value)
+                if (current.Value == value)
                 {
                     return true;
                 }
-                Current = Current.Next;
+                current = current.Next;
             }
             return false;
         }
@@ -48,7 +48,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Returns all node values in linked list as a string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string of all node's value</returns>
 
         public override string ToString()
         {
@@ -57,11 +57,11 @@ namespace LinkedList.Classes
                 throw new Exception("No Head Value");
             }
             string nodeValues = "";
-            Node Current = Head;
-            while (Current != null)
+            Node current = Head;
+            while (current != null)
             {
-                nodeValues += $"{{{Current.Value}}}-->";
-                Current = Current.Next;
+                nodeValues += $"{{{current.Value}}}-->";
+                current = current.Next;
             }
             return nodeValues += $"NULL";
         }
@@ -69,31 +69,97 @@ namespace LinkedList.Classes
         /// <summary>
         /// Appends a node to the end of a linked list
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         public void Append(int value)
         {
-
+            if (Head == null)
+            {
+                Insert(value);
+                return;
+            }
+            Node node = new Node(value);
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Next == null)
+                {
+                    current.Next = node;
+                    node.Next = null;
+                    Tail = node;
+                }
+                current = current.Next;
+            }
         }
 
         /// <summary>
         /// Inserts a node before a specific node
         /// </summary>
-        /// <param name="oldVal"></param>
-        /// <param name="newVal"></param>
+        /// <param name="oldVal">node's value</param>
+        /// <param name="newVal">new node's value</param>
         public void InsertBefore(int oldVal, int newVal)
         {
-
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            if (Head.Value == oldVal && Head.Next == null)
+            {
+                Insert(newVal);
+            }
+            Node node = new Node(newVal);
+            Node current = Head;
+            while (current.Next != null && current != null)
+            {
+                if (current.Next.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                    temp.Next = null;
+                }
+                if (current.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                }
+                current = current.Next;
+            }
         }
 
         /// <summary>
         /// Inserts a node after a specific
         /// </summary>
-        /// <param name="oldVal"></param>
-        /// <param name="newVal"></param>
+        /// <param name="oldVal">node's value</param>
+        /// <param name="newVal">new node's value</param>
 
         public void InsertAfter(int oldVal, int newVal)
         {
-
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            if (Head.Value == oldVal && Head.Next == null)
+            {
+                Append(newVal);
+            }
+            Includes(newVal);
+            Node current = Head;
+            Node node = new Node(newVal);
+            while (current != null)
+            {
+                if (current.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                }
+                if (Tail.Value == oldVal)
+                {
+                    Append(newVal);
+                }
+                current = current.Next;
+            }
         }
     }
 }
