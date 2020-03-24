@@ -197,12 +197,12 @@ namespace LinkListTest
         public void CanInsertBeforeASpecificNodeInTheMiddle(int value)
         {
             Linklist ll = new Linklist();
-            ll.Insert(20);
-            ll.Insert(40);
-            ll.Insert(69);
-            ll.Insert(2020);
-            ll.Insert(123);
-            ll.Insert(456);
+            ll.Append(20);
+            ll.Append(40);
+            ll.Append(69);
+            ll.Append(2020);
+            ll.Append(123);
+            ll.Append(456);
             ll.InsertBefore(2020, value);
             int expected = ll.Head.Next.Next.Next.Value;
             Assert.Equal(value, expected);
@@ -225,7 +225,7 @@ namespace LinkListTest
             ll.Append(456);
             ll.InsertBefore(456, value);
             int expected = ll.Head.Next.Next.Next.Next.Next.Value;
-            Assert.Equal(value, expected);
+            Assert.Equal(expected, value);
         }
 
         [Fact]
@@ -279,6 +279,5 @@ namespace LinkListTest
             int actual = ll.Tail.Value;
             Assert.Equal(value, actual);
         }
-
     }
 }

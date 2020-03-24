@@ -15,7 +15,7 @@ namespace LinkedList.Classes
         /// In: int type
         /// Out: void
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         public void Insert(int value)
         {
             Head = new Node(value, Head);
@@ -24,7 +24,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Returns boolean if node's value is present in linked list
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         /// <returns></returns>
 
         public bool Includes(int value)
@@ -48,7 +48,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Returns all node values in linked list as a string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string of all node's value</returns>
 
         public override string ToString()
         {
@@ -69,7 +69,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Appends a node to the end of a linked list
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">node's value</param>
         public void Append(int value)
         {
             if (Head == null)
@@ -94,8 +94,8 @@ namespace LinkedList.Classes
         /// <summary>
         /// Inserts a node before a specific node
         /// </summary>
-        /// <param name="oldVal"></param>
-        /// <param name="newVal"></param>
+        /// <param name="oldVal">node's value</param>
+        /// <param name="newVal">new node's value</param>
         public void InsertBefore(int oldVal, int newVal)
         {
             if (Head == null)
@@ -108,18 +108,21 @@ namespace LinkedList.Classes
             }
             Node node = new Node(newVal);
             Node current = Head;
-            while (current != null)
+            while (current.Next != null && current != null)
             {
+                if (current.Next.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                    temp.Next = null;
+                }
                 if (current.Value == oldVal)
                 {
                     Node temp = current.Next;
                     current.Next = node;
                     node.Next = temp;
                 }
-/*                if (Tail.Value == oldVal)
-                {
-                    InsertBefore(Tail.Value, newVal);
-                }*/
                 current = current.Next;
             }
         }
@@ -140,6 +143,7 @@ namespace LinkedList.Classes
             {
                 Append(newVal);
             }
+            Includes(newVal);
             Node current = Head;
             Node node = new Node(newVal);
             while (current != null)
