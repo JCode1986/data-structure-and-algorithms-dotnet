@@ -65,5 +65,35 @@ namespace LinkedList.Classes
             }
             return nodeValues += $"NULL";
         }
+
+        /// <summary>
+        /// Appends a node to the end of a linked list
+        /// </summary>
+        /// <param name="value"></param>
+        public void Append(int value)
+        {
+
+        }
+
+        /// <summary>
+        /// Inserts a node before a specific node
+        /// </summary>
+        /// <param name="oldVal"></param>
+        /// <param name="newVal"></param>
+        public void InsertBefore(int oldVal, int newVal)
+        {
+
+        }
+
+        /// <summary>
+        /// Inserts a node after a specific
+        /// </summary>
+        /// <param name="oldVal"></param>
+        /// <param name="newVal"></param>
+
+        public void InsertAfter(int oldVal, int newVal)
+        {
+
+        }
     }
 }
