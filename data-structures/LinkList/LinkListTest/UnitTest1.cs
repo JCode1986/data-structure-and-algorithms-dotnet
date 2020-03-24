@@ -161,9 +161,124 @@ namespace LinkListTest
         {
             Linklist ll = new Linklist();
             ll.Insert(20);
+            ll.Insert(22);
+            ll.Insert(24);
             ll.Append(value);
-            int expected = ll.Head.Next.Value;
+            int expected = ll.Tail.Value ;
             Assert.Equal(value, expected);
         }
+
+        [Fact]
+        public void ThrowsExceptionIfNoHeadWhenCallingInsertBefore()
+        {
+            Linklist ll = new Linklist();
+            Assert.Throws<Exception>(() => ll.InsertBefore(3, 23));
+        }
+
+        [Theory]
+        [InlineData(1900)]
+        [InlineData(1707)]
+        [InlineData(54)]
+        public void CanInsertANodeBeforeWithOnlyOneNodeInLinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(23);
+            ll.InsertBefore(23, value);
+            int actual = ll.Head.Value;
+            int expected = value;
+            Assert.Equal(actual, expected);
+        }
+        [Theory]
+        [InlineData(23)]
+        [InlineData(4)]
+        [InlineData(5)]
+        [InlineData(6)]
+        [InlineData(7)]
+        public void CanInsertBeforeASpecificNodeInTheMiddle(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(20);
+            ll.Insert(40);
+            ll.Insert(69);
+            ll.Insert(2020);
+            ll.Insert(123);
+            ll.Insert(456);
+            ll.InsertBefore(2020, value);
+            int expected = ll.Head.Next.Next.Next.Value;
+            Assert.Equal(value, expected);
+        }
+
+        /*        [Theory]
+                [InlineData(23)]
+                [InlineData(4)]
+                [InlineData(5)]
+                [InlineData(6)]
+                [InlineData(7)]
+                public void CanInsertBeforeASpecificNodeInTheEndOfALinkedList(int value)
+                {
+                    Linklist ll = new Linklist();
+                    ll.Insert(20);
+                    ll.Insert(40);
+                    ll.Insert(69);
+                    ll.Insert(2020);
+                    ll.Insert(123);
+                    ll.Insert(456);
+                    ll.InsertBefore(456, value);
+                    int expected = ll.Head.Next.Next.Next.Value;
+                    Assert.Equal(value, expected);
+                }*/
+
+        [Fact]
+        public void ThrowsExceptionIfNoHeadWhenCallingInsertAfter()
+        {
+            Linklist ll = new Linklist();
+            Assert.Throws<Exception>(() => ll.InsertAfter(3, 23));
+        }
+
+        [Theory]
+        [InlineData(1900)]
+        [InlineData(1707)]
+        [InlineData(54)]
+        public void CanInsertANodeAfterWithOnlyOneNodeInLinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(23);
+            ll.InsertAfter(23, value);
+            int actual = ll.Tail.Value;
+            int expected = value;
+            Assert.Equal(actual, expected);
+        }
+        [Theory]
+        [InlineData(1900)]
+        [InlineData(1707)]
+        [InlineData(54)]
+        public void CanInsertANodeAfterWithOnlyOneNodeInMiddleOfLinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(23);
+            ll.Insert(232);
+            ll.Insert(2367);
+            ll.Insert(12367);
+            ll.InsertAfter(2367, value);
+            int actual = ll.Head.Next.Next.Value;
+            Assert.Equal(value, actual);
+        }
+
+        [Theory]
+        [InlineData(1900)]
+        [InlineData(1707)]
+        [InlineData(54)]
+        public void CanInsertANodeAfterWithOnlyOneNodeInEndOfLinkedList(int value)
+        {
+            Linklist ll = new Linklist();
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            ll.Append(12367);
+            ll.InsertAfter(12367, value);
+            int actual = ll.Tail.Value;
+            Assert.Equal(value, actual);
+        }
+
     }
 }

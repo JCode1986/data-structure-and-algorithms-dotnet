@@ -98,7 +98,33 @@ namespace LinkedList.Classes
         /// <param name="newVal"></param>
         public void InsertBefore(int oldVal, int newVal)
         {
-
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            if (Head.Value == oldVal && Head.Next == null)
+            {
+                Insert(newVal);
+            }
+            Node node = new Node(newVal);
+            Node current = Head;
+            while (current != null)
+            {
+/*                if (current.Next.Next == null && current.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                    Tail = temp;
+                }*/
+                if (current.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                }
+                current = current.Next;
+            }
         }
 
         /// <summary>
@@ -109,7 +135,31 @@ namespace LinkedList.Classes
 
         public void InsertAfter(int oldVal, int newVal)
         {
-
+            if (Head == null)
+            {
+                throw new Exception("No Head Value");
+            }
+            if (Head.Value == oldVal && Head.Next == null)
+            {
+                Append(newVal);
+            }
+            Node current = Head;
+            Node node = new Node(newVal);
+            while (current != null)
+            {
+                if (current.Value == oldVal && current.Next == null)
+                {
+                    current.Next = node;
+                    node.Next = null;
+                }
+                if (current.Value == oldVal)
+                {
+                    Node temp = current.Next;
+                    current.Next = node;
+                    node.Next = temp;
+                }
+                current = current.Next;
+            }
         }
     }
 }
