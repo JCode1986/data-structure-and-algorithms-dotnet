@@ -130,8 +130,8 @@ namespace LinkedList.Classes
         /// <summary>
         /// Inserts a node after a specific
         /// </summary>
-        /// <param name="oldVal"></param>
-        /// <param name="newVal"></param>
+        /// <param name="oldVal">node's value</param>
+        /// <param name="newVal">new node's value</param>
 
         public void InsertAfter(int oldVal, int newVal)
         {
