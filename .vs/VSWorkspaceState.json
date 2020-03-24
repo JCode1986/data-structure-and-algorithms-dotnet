@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
-    "\\challenges\\ArrayBinarySearch",
-    "\\challenges\\ArrayBinarySearch\\BinarySearch",
     "\\challenges\\ArrayBinarySearch\\image",
+    "\\data-structures",
     "\\data-structures\\LinkList"
   ],
-  "SelectedNode": "\\challenges\\ArrayBinarySearch\\README.md",
+  "SelectedNode": "\\challenges",
   "PreviewInSolutionExplorer": false
 }
