@@ -161,5 +161,18 @@ namespace LinkedList.Classes
                 current = current.Next;
             }
         }
+
+        /// <summary>
+        /// Return the node’s value that is k from the end of the linked list
+        /// </summary>
+        /// <param name="k">number that is k away from the end of a linked</param>
+        public int KthFromEnd(int k)
+        {
+            if (k == 0)
+            {
+                return Tail.Value;
+            }
+            return 0;
+        }
     }
 }

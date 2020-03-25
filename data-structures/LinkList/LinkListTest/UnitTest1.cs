@@ -279,5 +279,17 @@ namespace LinkListTest
             int actual = ll.Tail.Value;
             Assert.Equal(value, actual);
         }
+
+        [Fact]
+        public void IfParameterIsZeroReturnTailValue()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            int actual = ll.KthFromEnd(0);
+            int expected = ll.Tail.Value;
+            Assert.Equal(expected, actual);
+        }
     }
 }

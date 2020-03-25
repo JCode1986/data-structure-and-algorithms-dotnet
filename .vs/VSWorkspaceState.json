@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
-    "",
     "\\data-structures",
-    "\\data-structures\\LinkList"
+    "\\data-structures\\LinkList",
+    "\\data-structures\\LinkList\\LinkList"
   ],
-  "SelectedNode": "\\challenges",
   "PreviewInSolutionExplorer": false
 }
