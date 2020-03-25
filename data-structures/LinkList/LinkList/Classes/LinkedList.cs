@@ -161,5 +161,30 @@ namespace LinkedList.Classes
                 current = current.Next;
             }
         }
+
+        /// <summary>
+        /// Return the node’s value that is k from the end of the linked list
+        /// </summary>
+        /// <param name="k">number that is k away from the end of a linked</param>
+        public int KthFromEnd(int k)
+        {
+            if (k == 0)
+            {
+                return Tail.Value;
+            }
+            int counter = 0;
+            Node current = Head;
+            Node temp = Head;
+            while (current.Next != null)
+            {
+                if (counter >= k)
+                {
+                    temp = temp.Next;
+                }
+                counter++;
+                current = current.Next;
+            }
+            return counter < k ? throw new Exception("Argument is greater than linked list") : temp.Value;
+        }
     }
 }

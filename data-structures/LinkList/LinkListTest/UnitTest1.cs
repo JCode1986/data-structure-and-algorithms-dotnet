@@ -279,5 +279,47 @@ namespace LinkListTest
             int actual = ll.Tail.Value;
             Assert.Equal(value, actual);
         }
+
+        [Fact]
+        public void IfParameterIsZeroReturnTailValue()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            int actual = ll.KthFromEnd(0);
+            int expected = ll.Tail.Value;
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ThrowsAnErrorIfParamIsGreatherThanLinkedList()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            Assert.Throws<Exception>(() => ll.KthFromEnd(6));
+        }
+
+        [Theory]
+        [InlineData(0, 6)]
+        [InlineData(1, 5)]
+        [InlineData(2, 4)]
+        [InlineData(3, 3)]
+        [InlineData(4, 2)]
+        [InlineData(5, 1)]
+        public void ReturnsTheCorrectNodeValueFromKParamAwayFromEnd(int k, int expected)
+        {
+            Linklist ll = new Linklist();
+            ll.Append(1);
+            ll.Append(2);
+            ll.Append(3);
+            ll.Append(4);
+            ll.Append(5);
+            ll.Append(6);
+            int actual = ll.KthFromEnd(k);
+            Assert.Equal(expected, actual);
+        }
     }
 }
