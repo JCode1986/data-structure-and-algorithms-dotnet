@@ -201,10 +201,8 @@ namespace LinkedList.Classes
                 {
                     temp = temp.Next;
                 }
-
                 counter++;
                 current = current.Next;
-
             }
             return temp.Value;
         }
