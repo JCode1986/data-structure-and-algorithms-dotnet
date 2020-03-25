@@ -172,7 +172,19 @@ namespace LinkedList.Classes
             {
                 return Tail.Value;
             }
-            return 0;
+            int counter = 0;
+            Node current = Head;
+            Node temp = Head;
+            while (current != null)
+            {
+                if (counter >= k)
+                {
+                    temp = temp.Next;
+                }
+                counter++;
+                current = current.Next;
+            }
+            throw new Exception("k Parameter is longer than linked list");
         }
     }
 }

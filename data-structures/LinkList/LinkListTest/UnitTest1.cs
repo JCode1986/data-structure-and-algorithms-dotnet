@@ -291,5 +291,17 @@ namespace LinkListTest
             int expected = ll.Tail.Value;
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ThrowsAnErrorIfParamIsGreatherThanLinkedList()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(23);
+            ll.Append(232);
+            ll.Append(2367);
+            Assert.Throws<Exception>(() => ll.KthFromEnd(6));
+        }
+
+
     }
 }
