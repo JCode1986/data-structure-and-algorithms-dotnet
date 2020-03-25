@@ -22,6 +22,22 @@ namespace LinkedList.Classes
         }
 
         /// <summary>
+        /// Returns count of linked list
+        /// </summary>
+        /// <param name="head"></param>
+        public int LinkedListCount(Node head)
+        {
+            Node current = Head;
+            int count = 0;
+            while (current != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
+        }
+
+        /// <summary>
         /// Returns boolean if node's value is present in linked list
         /// </summary>
         /// <param name="value">node's value</param>
@@ -175,16 +191,22 @@ namespace LinkedList.Classes
             int counter = 0;
             Node current = Head;
             Node temp = Head;
-            while (current != null)
+            while (current.Next != null)
             {
+                if (k > LinkedListCount(Head))
+                {
+                    throw new Exception("k Parameter is longer than linked list");
+                }
                 if (counter >= k)
                 {
                     temp = temp.Next;
                 }
+
                 counter++;
                 current = current.Next;
+
             }
-            throw new Exception("k Parameter is longer than linked list");
+            return temp.Value;
         }
     }
 }
