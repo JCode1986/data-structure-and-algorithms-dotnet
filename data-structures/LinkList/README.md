@@ -27,3 +27,6 @@
     * `InsertBefore(int oldValue, newValue)` - insert a node before a specific node.
     * `InsertAfter(int oldValue, newValue)` - insert a node after a specific node.
     * `KthFromTheEnd(int k) method - returns node value, that is k away from the end of the linked list.
+
+## Whitboard
+![Whitboard](./LinkList/assets/wb6.jpg)
