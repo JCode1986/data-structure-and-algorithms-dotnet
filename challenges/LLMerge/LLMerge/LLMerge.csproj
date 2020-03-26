@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="LinkList">
+      <HintPath>..\..\..\data-structures\LinkList\LinkList\bin\Debug\netcoreapp3.1\LinkList.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

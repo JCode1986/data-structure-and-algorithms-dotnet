@@ -1,5 +1,5 @@
 ﻿using System;
-//using LinkList.Classes;
+using LinkList.Classes;
 
 namespace LLMerge
 {
@@ -8,7 +8,11 @@ namespace LLMerge
         static void Main(string[] args)
         {
            Console.WriteLine("Hello World!");
-            //Node node = new Node();
+        }
+
+        static void LLMerge(Node LL1, Node LL2)
+        {
+
         }
     }
 }
