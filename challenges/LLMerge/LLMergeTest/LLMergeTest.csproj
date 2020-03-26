@@ -17,4 +17,10 @@
     <ProjectReference Include="..\LLMerge\LLMerge.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LinkList">
+      <HintPath>..\..\..\data-structures\LinkList\LinkList\bin\Debug\netcoreapp3.1\LinkList.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
