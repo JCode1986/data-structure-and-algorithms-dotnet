@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
+    "\\challenges\\LLMerge",
+    "\\challenges\\LLMerge\\LLMerge",
     "\\data-structures",
-    "\\data-structures\\LinkList"
+    "\\data-structures\\LinkList",
+    "\\data-structures\\LinkList\\LinkList"
   ],
-  "SelectedNode": "\\data-structures\\LinkList\\LinkList",
   "PreviewInSolutionExplorer": false
 }
