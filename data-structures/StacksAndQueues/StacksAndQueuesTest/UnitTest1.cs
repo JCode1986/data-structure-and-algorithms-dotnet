@@ -2,16 +2,19 @@ using MyStacks.Classes;
 using LinkList.Classes;
 using System;
 using Xunit;
+using MyQueues;
 
 namespace StacksAndQueuesTest
 {
     public class UnitTest1
     {
+            MyStack stacks = new MyStack();
+            MyQueue queue = new MyQueue();
+
         [Fact]
         public void CanSuccessfullyPushOnToAStack()
         {
-            MyStack stack = new MyStack();
-            
+
         }
 
         [Fact]
