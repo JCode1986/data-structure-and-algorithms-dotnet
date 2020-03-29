@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
     "\\data-structures",
-    "\\data-structures\\LinkList\\LinkList",
-    "\\data-structures\\LinkList\\LinkList\\Classes"
+    "\\data-structures\\StacksAndQueues"
   ],
-  "SelectedNode": "\\data-structures\\StacksAndQueues",
   "PreviewInSolutionExplorer": false
 }

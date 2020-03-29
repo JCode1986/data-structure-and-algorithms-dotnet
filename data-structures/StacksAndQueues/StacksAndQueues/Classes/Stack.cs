@@ -1,22 +1,23 @@
-using LinkList.Classes;
+using StacksAndQueues.Classes;
 using System;
 using System.Collections;
 
+
 namespace MyStacks.Classes
 {
-    public class MyStack
+    public class MyStack<T>
     {
-        public static Node Top { get; set; }
+        public Node<T> Top { get; set; }
 
-        public static int Size { get; set; }
+        public int Size { get; set; }
 
         /// <summary>
         /// Push node on top of the stack
         /// </summary>
         /// <param name="node">Node</param>
-        public static void Push(int value)
+        public void Push(T value)
         {
-            Node node = new Node(value, Top);
+            Node<T> node = new Node<T>(value, Top);
             Top = node;
             Size++;
         }
@@ -25,24 +26,27 @@ namespace MyStacks.Classes
         /// Removes a node from the top of the stack, and returns node's value
         /// </summary>
         /// <returns></returns>
-        public static int Pop()
+        public T Pop()
         {
-            if (Top != null)
+            if (Top == null)
             {
-                Node temp = Top;
+                throw new Exception("Nothing to pop from the top of stack.");
+            }
+            else
+            {
+                Node<T> temp = Top;
                 Top = temp.Next;
                 temp.Next = null;
                 Size--;
                 return temp.Value;
             }
-            throw new Exception("Nothing to pop from the top of stack.");
         }
 
         /// <summary>
         /// Returns the value of the node located on top of the stack, without removing it from the stack.
         /// </summary>
         /// <param name="node"></param>
-        public static int Peek()
+        public T Peek()
         {
             return Top != null ? Top.Value : throw new Exception("Nothing to peek from the top of stack.");
         }
@@ -50,7 +54,7 @@ namespace MyStacks.Classes
         /// <summary>
         /// Returns a boolean if stack is empty or not.
         /// </summary>
-        public static bool IsEmpty()
+        public bool IsEmpty()
         {
             return Top == null ? true : false;
         }
