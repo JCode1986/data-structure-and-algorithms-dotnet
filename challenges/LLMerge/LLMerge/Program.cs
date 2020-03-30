@@ -8,7 +8,18 @@ namespace LLMerge
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Hello World!");
+            Linklist LL1 = new Linklist();
+            LL1.Append(1);
+            LL1.Append(3);
+            LL1.Append(2);
+
+            Linklist LL2 = new Linklist();
+            LL2.Append(5);
+            LL2.Append(9);
+            LL2.Append(4);
+
+            Linklist merge = LLMerge(LL1, LL2);
+            Console.WriteLine(merge.ToString());
         }
 
         /// <summary>
