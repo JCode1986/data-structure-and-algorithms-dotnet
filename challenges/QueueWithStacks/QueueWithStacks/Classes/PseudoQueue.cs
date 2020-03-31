@@ -4,12 +4,12 @@ using System;
 
 namespace PseudoQueue.Classes
 {
-    public class PseudoQueue
+    public class MyPseudoQueue
     {
-        public MyStack<int> FirstStack { get; set; }
-        public MyStack<int> SecondStack { get; set; }
+        public MyStack<int> FirstStack { get; set; } = null;
+        public MyStack<int> SecondStack { get; set; } = null;
 
-        public PseudoQueue()
+        public void PseudoQueue()
         {
             FirstStack = new MyStack<int>();
             SecondStack = new MyStack<int>();
@@ -19,9 +19,27 @@ namespace PseudoQueue.Classes
         /// inserts value into the PseudoQueue, using a first-in, first-out approach.
         /// </summary>
         /// <param name="value"></param>
-        public void PseudoQueueEnqueue(Node<int> value)
+        public MyStack<int> PseudoQueueEnqueue(int value)
         {
+            if (FirstStack.IsEmpty())
+            {
+                FirstStack.Push(value);
+            }
+            else
+            {
+                while(!(FirstStack.IsEmpty()))
+                {
+                    SecondStack.Push(FirstStack.Pop());
+                }
 
+                FirstStack.Push(value);
+
+                while (!(SecondStack.IsEmpty()))
+                {
+                    FirstStack.Push(SecondStack.Pop());
+                }
+            }
+            return FirstStack;
         }
 
         /// <summary>
