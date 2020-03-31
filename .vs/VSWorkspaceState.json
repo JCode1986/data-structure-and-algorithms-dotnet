@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges"
+    "\\challenges",
+    "\\challenges\\QueueWithStacks"
   ],
-  "SelectedNode": "\\challenges\\QueueWithStacks",
+  "SelectedNode": "\\challenges\\QueueWithStacks\\README.md",
   "PreviewInSolutionExplorer": false
 }
