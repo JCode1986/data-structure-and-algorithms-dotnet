@@ -19,7 +19,7 @@ namespace PseudoQueue.Classes
         /// inserts value into the PseudoQueue, using a first-in, first-out approach.
         /// </summary>
         /// <param name="value"></param>
-        public MyStack<int> PseudoQueueEnqueue(int value)
+        public void PseudoQueueEnqueue(int value)
         {
             if (FirstStack.IsEmpty())
             {
@@ -27,28 +27,45 @@ namespace PseudoQueue.Classes
             }
             else
             {
-                while(!(FirstStack.IsEmpty()))
+                while(!FirstStack.IsEmpty())
                 {
                     SecondStack.Push(FirstStack.Pop());
                 }
 
                 FirstStack.Push(value);
 
-                while (!(SecondStack.IsEmpty()))
+                while (!SecondStack.IsEmpty())
                 {
                     FirstStack.Push(SecondStack.Pop());
                 }
             }
-            return FirstStack;
         }
 
         /// <summary>
         /// extracts a value from the PseudoQueue, using a first-in, first-out approach.
         /// </summary>
         /// <param name="value"></param>
-        public void PseudoQueueDenqueue(Node<int> value)
+        public int PseudoQueueDequeue()
         {
 
+            if (FirstStack.IsEmpty())
+            {
+                throw new Exception("Nothing in PsuedoQueue");
+            }
+
+            while (FirstStack.Top.Next != null)
+            {
+                SecondStack.Push(FirstStack.Pop());
+            }
+
+            int dequeuedValue = FirstStack.Pop();
+
+            while (!SecondStack.IsEmpty())
+            {
+                FirstStack.Push(SecondStack.Pop());
+            }
+
+            return dequeuedValue;
         }
     }
 }

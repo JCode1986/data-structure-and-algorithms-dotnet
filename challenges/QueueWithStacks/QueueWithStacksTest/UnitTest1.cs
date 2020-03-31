@@ -44,5 +44,49 @@ namespace QueueWithStacksTest
             int[] actual = { 5, 10, 15, 20 };
             Assert.Equal(actual, expected);
         }
+
+        [Fact]
+        public void CanThrowExceptionIfThereIsNothingToDequeue()
+        {
+            MyPseudoQueue ps = new MyPseudoQueue();
+            ps.PseudoQueue();
+            Assert.Throws<Exception>(() => ps.PseudoQueueDequeue());
+        }
+
+        [Fact]
+        public void CanDequeueASingleNodeValueFromPseudoQueue()
+        {
+            MyPseudoQueue ps = new MyPseudoQueue();
+            ps.PseudoQueue();
+            ps.PseudoQueueEnqueue(20);
+            int expected = 20;
+            int actual = ps.PseudoQueueDequeue();
+            Assert.Equal(actual, expected);
+        }
+
+        [Fact]
+        public void PseudoQueueIsEmptyAfterLastPop()
+        {
+            MyPseudoQueue ps = new MyPseudoQueue();
+            ps.PseudoQueue();
+            ps.PseudoQueueEnqueue(20);
+            ps.PseudoQueueDequeue();   
+            bool actual = ps.FirstStack.IsEmpty();
+            Assert.True(actual);
+        }
+
+        [Fact]
+        public void CanDequeueFirstNodeValueFromPseudoQueueWithMultipleNodes()
+        {
+            MyPseudoQueue ps = new MyPseudoQueue();
+            ps.PseudoQueue();
+            ps.PseudoQueueEnqueue(5);
+            ps.PseudoQueueEnqueue(10);
+            ps.PseudoQueueEnqueue(15);
+            ps.PseudoQueueEnqueue(20);
+            int expected = 20;
+            int actual = ps.PseudoQueueDequeue();
+            Assert.Equal(actual, expected);
+        }
     }
 }
