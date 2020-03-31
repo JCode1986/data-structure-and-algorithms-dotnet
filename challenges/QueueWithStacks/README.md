@@ -33,6 +33,13 @@ dequeue()
 
 ### Big O
 
+enqueue(value) - shuffling from the 2 stacks; 2 while loops; O(n + m)
+
+| Time | Space |
+| :----------- | :----------- |
+| O(n) | O(n) |
+
+dequeue() - shuffling from the 2 stacks; 2 while loops; O(n + m)
 
 | Time | Space |
 | :----------- | :----------- |
@@ -43,7 +50,7 @@ dequeue()
 
 
 ### Whiteboard Visual
-![Whiteboard]()
-
+![Whiteboard](assets/enqueue.jpg)
+![Whiteboard](assets/dequeue.jpg)
 
 ---
