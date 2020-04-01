@@ -84,17 +84,18 @@ namespace FIFIAnimalShelterTest
         public void CanProperlyAddMulitpleDogsToShelter()
         {
             shelter.FIFOAnimalShelter();
-            shelter.AnimalEnqueue("dog");
-            shelter.AnimalEnqueue("dog");
-            shelter.AnimalEnqueue("dog");
-            string[] dogArray =
+            for (int i = 0; i < 50; i++)
             {
-                shelter.DogQ.Front.Value,
-                shelter.DogQ.Front.Next.Value,
-                shelter.DogQ.Front.Next.Next.Value,
-            };
-            int actual = dogArray.Length;
-            int expected = 3;
+                shelter.AnimalEnqueue("dog");
+            }
+
+            for (int i = 0; i < 25; i++)
+            {
+                shelter.AnimalDequeue("dog");
+            }
+
+            int actual = shelter.DogQ.Size;
+            int expected = 25;
             Assert.Equal(expected, actual);
         }
 
@@ -102,20 +103,18 @@ namespace FIFIAnimalShelterTest
         public void CanProperlyAddMulitpleCatsToShelter()
         {
             shelter.FIFOAnimalShelter();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 18; i++)
             {
                 shelter.AnimalEnqueue("cat");
             }
-            shelter.AnimalDequeue("cat");
-            string[] catArray =
+
+            for (int i = 0; i < 5; i++)
             {
-                shelter.CatQ.Front.Value,
-                shelter.CatQ.Front.Next.Value,
-                shelter.CatQ.Front.Next.Next.Value,
-                shelter.CatQ.Front.Next.Next.Next.Value,
-            };
-            int actual = catArray.Length;
-            int expected = 4;
+                shelter.AnimalDequeue("cat");
+            }
+
+            int actual = shelter.CatQ.Size;
+            int expected = 13;
             Assert.Equal(expected, actual);
         }
 
