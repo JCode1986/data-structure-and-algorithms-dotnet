@@ -140,6 +140,17 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
+        public void CanGetTheSizeOfQueue()
+        {
+            MyQueue<string> queue = new MyQueue<string>();
+            queue.Enqueue("Are");
+            queue.Enqueue("You");
+            queue.Enqueue("23");
+            int actual = queue.Size;
+            Assert.Equal(3, actual);
+        }
+
+        [Fact]
         public void CanSuccessfullyPeekIntoAQueueSeeingTheExpectedValue()
         {
             MyQueue<string> queue = new MyQueue<string>();

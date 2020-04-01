@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="FIFOAnimalShelter">
+      <HintPath>..\..\..\challenges\FIFOAnimalShelter\FIFOAnimalShelter\bin\Debug\netcoreapp3.1\FIFOAnimalShelter.dll</HintPath>
+    </Reference>
     <Reference Include="LinkList">
       <HintPath>..\..\LinkList\LinkList\bin\Debug\netcoreapp3.1\LinkList.dll</HintPath>
     </Reference>
