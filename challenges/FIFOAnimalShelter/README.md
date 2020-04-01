@@ -17,11 +17,13 @@
 
 * enqueue(dog)
 * enqueue(cat)
+* enqueue(bird)
 
 | Input | Expected Output |
 | :----------- | :----------- |
 | Shelter = none | Shelter = dog |
 | Shelter = dog | Shelter = dog , cat |
+| Shelter = dog | Shelter = dog , cat (throw exception) |
 
 * dequeue(cat)
 * dequeue(dog)
@@ -29,8 +31,9 @@
 
 | Input | Expected Output |
 | :----------- | :----------- |
-| Shelter = dog | Shelter = none |
-| Shelter = dog, cat | Shelter = cat |
+| Shelter = dog | Shelter = none, return cat |
+| Shelter = dog, cat | Shelter = cat, return dog |
+| Shelter = dog, cat | return null
 
 ---
 
