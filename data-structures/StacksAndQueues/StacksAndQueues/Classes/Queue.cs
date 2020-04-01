@@ -6,8 +6,8 @@ namespace MyQueues
 {
     public class MyQueue<T>
     {
-        public Node<T> Front { get; set; }
-        public Node<T> Rear { get; set; }
+        public Node<T> Front { get; set; } = null;
+        public Node<T> Rear { get; set; } = null;
 
         public int Size { get; set; }
 
@@ -21,6 +21,7 @@ namespace MyQueues
             if (Front == null)
             {
                 Front = node;
+                Size++;
                 return;
             }
             Node<T> current = Front;

@@ -6,6 +6,7 @@ namespace FIFOAnimalShelter.Classes
 {
     public class Dog
     {
-        public string Preference { get; set; }
+        public string Preference { get; set; } = null;
+        public string Name { get; set; } = null;
     }
 }

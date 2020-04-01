@@ -14,7 +14,6 @@ namespace FIFOAnimalShelter.Classes
         {
             CatQ = new MyQueue<string>();
             DogQ = new MyQueue<string>();
-            OtherQ = new MyQueue<string>();
         }
 
         /// <summary>
@@ -23,23 +22,31 @@ namespace FIFOAnimalShelter.Classes
         /// <param name="animal"></param>
         public void AnimalEnqueue(string animal)
         {
+            if (animal != "dog" && animal != "cat")
+            {
+                throw new Exception("Must add a cat or dog");
+            }
             if (animal == "dog")
             {
                 DogQ.Enqueue(animal);
             }
             if (animal == "cat")
             {
-                DogQ.Enqueue(animal);
-            }
-            else
-            {
-                OtherQ.Enqueue(animal);
+                CatQ.Enqueue(animal);
             }
         }
 
-        public void AnimalDequeue(string preference)
+        public string AnimalDequeue(string preference)
         {
-            
+            if (preference == "dog")
+            {
+                DogQ.Dequeue();
+            }
+            if (preference == "cat")
+            {
+                CatQ.Dequeue();
+            }
+            return null;
         }
     }
 }
