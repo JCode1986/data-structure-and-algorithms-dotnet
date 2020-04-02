@@ -5,33 +5,33 @@ namespace MultiBracketValidation
 {
     public class BracketValidation
     {
-        public MyStack<char> stack = new MyStack<char>();
+        public MyStack<char> brackets = new MyStack<char>();
 
         /// <summary>
-        /// Method that returns a boolean if all stack has an opening and closing match
+        /// Method that returns a boolean if all brackets has an opening and closing match
         /// </summary>
-        /// <param name="value">string</param>
+        /// <param name="str">string</param>
         /// <returns>boolean</returns>
-        public bool ValidateBrackets(string value)
+        public bool ValidateBrackets(string str)
         {
-            foreach (char character in value)
+            foreach (char character in str)
             {
                 if (character == '(' || character == '{' || character == '[')
                 {
-                    stack.Push(character);
+                    brackets.Push(character);
                 }
                 else if (character == ']' || character == '}' || character == ')')
                 {
-                    if (character == '}' && stack.Peek() != '{' ||
-                        character == ')' && stack.Peek() != '(' ||
-                        character == ']' && stack.Peek() != '[')
+                    if (character == '}' && brackets.Peek() != '{' ||
+                        character == ')' && brackets.Peek() != '(' ||
+                        character == ']' && brackets.Peek() != '[')
                     {
                         return false;
                     }
-                    stack.Pop();
+                    brackets.Pop();
                 }
             }
-            return stack.IsEmpty();
+            return brackets.IsEmpty();
         }
     }
 }
