@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges"
+    "\\challenges",
+    "\\challenges\\LLMerge",
+    "\\challenges\\MultiBracketValidation",
+    "\\data-structures\\StacksAndQueues\\StacksAndQueues\\Classes"
   ],
-  "SelectedNode": "\\challenges\\FIFOAnimalShelter",
+  "SelectedNode": "\\challenges\\MultiBracketValidation\\README.md",
   "PreviewInSolutionExplorer": false
 }
