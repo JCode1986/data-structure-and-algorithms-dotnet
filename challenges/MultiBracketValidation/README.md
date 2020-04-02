@@ -33,7 +33,7 @@ There are 3 types of brackets:
 
 | Time | Space |
 | :----------- | :----------- |
-| O(1) | O(1) |
+| O(n) | O(n) |
 
 
 ---
