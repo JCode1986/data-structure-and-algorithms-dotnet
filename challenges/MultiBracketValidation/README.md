@@ -40,7 +40,7 @@ There are 3 types of brackets:
 
 
 ### Whiteboard Visual
-![Whiteboard]()
+![Whiteboard](assets/wb13.jpg)
 
 
 ---

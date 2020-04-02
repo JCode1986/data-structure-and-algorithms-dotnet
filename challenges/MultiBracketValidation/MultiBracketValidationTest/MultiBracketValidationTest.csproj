@@ -17,4 +17,10 @@
     <ProjectReference Include="..\MultiBracketValidation\MultiBracketValidation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="StacksAndQueues">
+      <HintPath>..\..\..\data-structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp3.1\StacksAndQueues.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
