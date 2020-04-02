@@ -10,9 +10,9 @@ Your function should take a string as its only argument, and should return a boo
 
 There are 3 types of brackets:
 
-* Round Brackets : ()
-* Square Brackets : []
-* Curly Brackets : {}
+* Round Brackets : ( )
+* Square Brackets : [ ]
+* Curly Brackets : { }
 
 ---
 
