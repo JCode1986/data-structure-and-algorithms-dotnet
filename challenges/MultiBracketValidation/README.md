@@ -21,7 +21,7 @@ There are 3 types of brackets:
 | Input | Expected Output |
 | :----------- | :----------- |
 | "{ \}[ \]( \)" | true |
-| "{hello\}[world\](foo\){bar\}" | Shelter = dog , cat |
+| "{hello\}[world\](foo\){bar\}" | true |
 | "[ ( { ] ) }" | true |
 | "[ ( { \} ]" | false |
 | "{ ( } )" | false |
