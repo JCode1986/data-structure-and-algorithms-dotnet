@@ -8,6 +8,11 @@ namespace Tree.Classes
     public class BinarySearchTree
     {
         public Node<int> Root { get; set; } = null;
+
+        /// <summary>
+        /// Adds a node to a binary search tree
+        /// </summary>
+        /// <param name="value"></param>
         public void Add(int value)
         {
             Node<int> node = new Node<int>(value);
@@ -40,6 +45,55 @@ namespace Tree.Classes
                     current = current.Right;
                 }
             }
+        }
+
+        public bool Contains(int value)
+        {
+            Node<int> current = Root;
+            while (current != null)
+            {
+                if (value == current.Value)
+                {
+                    return true;
+                }
+                if (value < current.Value)
+                {
+                    current = current.Left;
+                }
+                else
+                {
+                    current = current.Right;
+                }
+            }
+            return false;
+/*            if (Root.Value == value)
+            {
+                return true;
+            }
+            
+            Node<int> current = Root;
+            
+            while (current != null)
+            {
+                if (current.Left.Value != value)
+                {
+                    current = current.Left;
+                }
+                else
+                {
+                    return true;
+                }
+
+                if (current.Right.Value != value)
+                {
+                    current = current.Right;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            return false;*/
         }
     }
 }

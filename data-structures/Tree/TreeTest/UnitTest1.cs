@@ -77,5 +77,22 @@ namespace TreeTest
             };
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(10, true)]
+        [InlineData(7, false)]
+        [InlineData(20, true)]
+        [InlineData(999, false)]
+        [InlineData(5, true)]
+        [InlineData(420, false)]
+        public void ReturnsTrueIfRootContainsSpecificValue(int value, bool expected)
+        {
+            BinarySearchTree Bst = new BinarySearchTree();
+            Bst.Add(10);
+            Bst.Add(20);
+            Bst.Add(5);
+            bool actual = Bst.Contains(value);
+            Assert.Equal(expected, actual);
+        }
     }
 }
