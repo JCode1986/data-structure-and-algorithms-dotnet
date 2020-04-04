@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
-    "\\challenges\\LLMerge",
-    "\\challenges\\MultiBracketValidation",
-    "\\data-structures\\StacksAndQueues\\StacksAndQueues\\Classes"
+    "\\data-structures",
+    "\\data-structures\\StacksAndQueues\\StacksAndQueues",
+    "\\data-structures\\Tree",
+    "\\data-structures\\Tree\\Trees",
+    "\\data-structures\\Tree\\Trees\\Classes"
   ],
-  "SelectedNode": "\\challenges\\MultiBracketValidation\\README.md",
+  "SelectedNode": "\\data-structures\\Tree\\Trees\\Classes",
   "PreviewInSolutionExplorer": false
 }
