@@ -66,34 +66,6 @@ namespace Tree.Classes
                 }
             }
             return false;
-/*            if (Root.Value == value)
-            {
-                return true;
-            }
-            
-            Node<int> current = Root;
-            
-            while (current != null)
-            {
-                if (current.Left.Value != value)
-                {
-                    current = current.Left;
-                }
-                else
-                {
-                    return true;
-                }
-
-                if (current.Right.Value != value)
-                {
-                    current = current.Right;
-                }
-                else
-                {
-                    return true;
-                }
-            }
-            return false;*/
         }
     }
 }
