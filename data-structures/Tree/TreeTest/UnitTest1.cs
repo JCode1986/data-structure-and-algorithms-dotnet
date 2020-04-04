@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Tree;
 using Tree.Classes;
 using Xunit;
 
@@ -92,6 +94,54 @@ namespace TreeTest
             Bst.Add(20);
             Bst.Add(5);
             bool actual = Bst.Contains(value);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void PreOrderTraversal()
+        {
+            BinarySearchTree Bst = new BinarySearchTree();
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            List<int> array = new List<int>() { 10, 20, 5, 15, 25, 6, 3 };
+            foreach (int num in array)
+            {
+                Bst.Add(num);
+            }
+            List<int> result = new List<int>();
+            List<int> expected = new List<int>() { 10, 5, 3, 6, 20, 15, 25 };
+            List<int> actual = Bt.PreOrder(Bst.Root, result);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void InOrderTraversal()
+        {
+            BinarySearchTree Bst = new BinarySearchTree();
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            List<int> array = new List<int>() { 10, 20, 5, 15, 25, 6, 3 };
+            foreach (int num in array)
+            {
+                Bst.Add(num);
+            }
+            List<int> result = new List<int>();
+            List<int> expected = new List<int>() { 3, 5, 6, 10, 15, 20, 25 };
+            List<int> actual = Bt.InOrder(Bst.Root, result);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void PostOrderTraversal()
+        {
+            BinarySearchTree Bst = new BinarySearchTree();
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            List<int> array = new List<int>() { 10, 5, 15, 3, 6, 13, 18 };
+            foreach (int num in array)
+            {
+                Bst.Add(num);
+            }
+            List<int> result = new List<int>();
+            List<int> expected = new List<int>() { 3, 6, 5, 13, 18, 15, 10 };
+            List<int> actual = Bt.PostOrder(Bst.Root, result);
             Assert.Equal(expected, actual);
         }
     }

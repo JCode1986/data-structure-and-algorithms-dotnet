@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
     "\\data-structures",
     "\\data-structures\\StacksAndQueues\\StacksAndQueues",
-    "\\data-structures\\StacksAndQueues\\StacksAndQueues\\Classes"
+    "\\data-structures\\Tree",
+    "\\data-structures\\Tree\\Trees",
+    "\\data-structures\\Tree\\Trees\\Classes"
   ],
-  "SelectedNode": "\\data-structures\\Tree",
+  "SelectedNode": "\\data-structures\\Tree\\Trees\\Classes",
   "PreviewInSolutionExplorer": false
 }
