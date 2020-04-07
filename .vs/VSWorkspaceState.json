@@ -3,11 +3,15 @@
     "",
     "\\challenges",
     "\\challenges\\FizzBuzzTree",
-    "\\data-structures\\StacksAndQueues\\StacksAndQueues\\Classes",
+    "\\challenges\\FizzBuzzTree\\FizzBuzzTree",
+    "\\challenges\\FizzBuzzTree\\FizzBuzzTreeTest",
+    "\\data-structures",
+    "\\data-structures\\StacksAndQueues",
+    "\\data-structures\\StacksAndQueues\\StacksAndQueues",
     "\\data-structures\\Tree",
     "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\Trees\\Classes"
+    "\\data-structures\\Tree\\TreeTest"
   ],
-  "SelectedNode": "\\challenges\\FizzBuzzTree",
+  "SelectedNode": "\\challenges\\FizzBuzzTree\\FizzBuzzTree\\Classes\\FizzBuzzTree.cs",
   "PreviewInSolutionExplorer": false
 }
