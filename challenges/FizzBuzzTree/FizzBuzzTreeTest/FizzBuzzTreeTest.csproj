@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -15,6 +15,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FizzBuzzTree\FizzBuzzTree.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Tree">
+      <HintPath>..\..\..\data-structures\Tree\Trees\bin\Debug\netcoreapp3.1\Tree.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
