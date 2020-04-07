@@ -27,7 +27,7 @@ Without utilizing any of the built-in methods available to your language, determ
 
 
 ### Whiteboard Visual
-![Whiteboard]()
+![Whiteboard](assets/fb.jpg)
 
 
 ---
