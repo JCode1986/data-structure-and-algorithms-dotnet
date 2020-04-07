@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures",
-    "\\data-structures\\StacksAndQueues\\StacksAndQueues",
+    "\\challenges",
+    "\\challenges\\FizzBuzzTree",
+    "\\data-structures\\StacksAndQueues\\StacksAndQueues\\Classes",
     "\\data-structures\\Tree",
     "\\data-structures\\Tree\\Trees",
     "\\data-structures\\Tree\\Trees\\Classes"
   ],
-  "SelectedNode": "\\data-structures\\Tree\\Trees\\Classes",
+  "SelectedNode": "\\challenges\\FizzBuzzTree",
   "PreviewInSolutionExplorer": false
 }
