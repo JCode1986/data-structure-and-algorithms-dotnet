@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Tree;
 using Tree.Classes;
+using Trees.Classes;
 using Xunit;
 
 namespace TreeTest
@@ -142,6 +143,26 @@ namespace TreeTest
             List<int> result = new List<int>();
             List<int> expected = new List<int>() { 3, 6, 5, 13, 18, 15, 10 };
             List<int> actual = Bt.PostOrder(Bst.Root, result);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CanAddNodeToRoot()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(12);
+            int actual = Bt.Root.Value;
+            Assert.Equal(12, actual);
+        }
+
+        [Fact]
+        public void CanAddNodeToLeft()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(12);
+            Bt.Add(14);
+            int[] expected = new int[] { 12, 14 };
+            int[] actual = new int[] { Bt.Root.Value, Bt.Root.Left.Value };
             Assert.Equal(expected, actual);
         }
     }
