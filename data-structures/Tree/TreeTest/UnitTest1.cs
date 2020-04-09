@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Tree;
 using Tree.Classes;
+using Trees.Classes;
 using Xunit;
 
 namespace TreeTest
@@ -142,6 +143,75 @@ namespace TreeTest
             List<int> result = new List<int>();
             List<int> expected = new List<int>() { 3, 6, 5, 13, 18, 15, 10 };
             List<int> actual = Bt.PostOrder(Bst.Root, result);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CanAddNodeToRoot()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(12);
+            int actual = Bt.Root.Value;
+            Assert.Equal(12, actual);
+        }
+
+        [Fact]
+        public void CanAddNodeToLeft()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(12);
+            Bt.Add(14);
+            int[] expected = new int[] { 12, 14 };
+            int[] actual = new int[] { Bt.Root.Value, Bt.Root.Left.Value };
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CanAddNodeToLeftandRight()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(12);
+            Bt.Add(14);
+            Bt.Add(15);
+            int[] expected = new int[] { 12, 14, 15 };
+            int[] actual = new int[] { Bt.Root.Value, Bt.Root.Left.Value, Bt.Root.Right.Value };
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void CanAddMultipleNodes()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            int[] expected = new int[] { 12, 14, 15, 152, 121, 615, 9145, 2315 };
+            foreach (int num in expected)
+            {
+                Bt.Add(num);
+            }
+
+            int[] actual = new int[]
+            {
+                Bt.Root.Value,
+                Bt.Root.Left.Value,
+                Bt.Root.Right.Value,
+                Bt.Root.Left.Left.Value,
+                Bt.Root.Left.Right.Value,
+                Bt.Root.Right.Left.Value,
+                Bt.Root.Right.Right.Value,
+                Bt.Root.Left.Left.Left.Value,
+            };
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void BreadthFirstTraversal()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            List<int> expected = new List<int>() { 10, 5, 15, 3, 6, 13, 18 };
+            foreach (int num in expected)
+            {
+                Bt.Add(num);
+            }
+            List<int> actual = Bt.BreadthFirst();
             Assert.Equal(expected, actual);
         }
     }
