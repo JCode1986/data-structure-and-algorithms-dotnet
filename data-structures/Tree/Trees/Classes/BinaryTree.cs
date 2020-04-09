@@ -160,5 +160,56 @@ namespace Tree
                 }
             }
         }
+
+        /// <summary>
+        /// Returns maximum value in binary tree
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+
+        public int FindMaximumValue(Node<int> node)
+        {
+            int max = 0;
+
+            if (node == null)
+            {
+                throw new Exception("No root");
+            }
+
+            if (node.Left == null && node.Right == null)
+            {
+                return node.Value;
+            }
+
+            MyQueue<Node<T>> Q = new MyQueue<Node<T>>();
+            Q.Enqueue(Root);
+
+            while (!Q.IsEmpty())
+            {
+                int num;
+                Node<T> current = Q.Dequeue();
+
+                if (current.Left != null)
+                {
+                    num = Convert.ToInt32(current.Left.Value);
+                    if (num > max)
+                    {
+                        max = num;
+                    }
+                    Q.Enqueue(current.Left);
+                }
+
+                if (current.Right != null)
+                {
+                    num = Convert.ToInt32(current.Right.Value);
+                    if (num > max)
+                    {
+                        max = num;
+                    }
+                    Q.Enqueue(current.Right);
+                }
+            }
+            return max;
+        }
     }
 }

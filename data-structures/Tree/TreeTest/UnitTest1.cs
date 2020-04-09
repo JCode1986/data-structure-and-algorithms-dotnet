@@ -214,5 +214,27 @@ namespace TreeTest
             List<int> actual = Bt.BreadthFirst();
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ReturnsRootValueIfNoChildrenForFindMaxValueMethod()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            Bt.Add(13);
+            int actual = Bt.FindMaximumValue(Bt.Root);
+            Assert.Equal(13, actual);
+        }
+
+        [Fact]
+        public void ReturnsMaximumValueInBinaryTree()
+        {
+            BinaryTree<int> Bt = new BinaryTree<int>();
+            List<int> expected = new List<int>() { 10, 5, 15, 3, 420, 6, 13, 18 };
+            foreach (int num in expected)
+            {
+                Bt.Add(num);
+            }
+            int actual = Bt.FindMaximumValue(Bt.Root);
+            Assert.Equal(420, actual);
+        }
     }
 }
