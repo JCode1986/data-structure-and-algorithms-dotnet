@@ -89,21 +89,21 @@ namespace Tree
         /// </summary>
         /// <param name="node"></param>
         /// <returns>list</returns>
-        public List<Node<T>> BreadthFirst()
+        public List<T> BreadthFirst()
         {
             if (Root == null)
             {
                 return null;
             }
 
-            List<Node<T>> result = new List<Node<T>>();
+            List<T> result = new List<T>();
             MyQueue<Node<T>> Q = new MyQueue<Node<T>>();
             Q.Enqueue(Root);
 
             while (!Q.IsEmpty())
             {
                 Node<T> current = Q.Dequeue();
-                result.Add(current);
+                result.Add(current.Value);
 
                 if (current.Left != null)
                 {
@@ -115,7 +115,6 @@ namespace Tree
                     Q.Enqueue(current.Right);
                 }
             }
-
             return result;
         }
 
