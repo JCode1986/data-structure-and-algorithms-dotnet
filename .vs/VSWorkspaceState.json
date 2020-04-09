@@ -1,17 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
-    "\\challenges\\FizzBuzzTree",
-    "\\challenges\\FizzBuzzTree\\FizzBuzzTree",
-    "\\challenges\\FizzBuzzTree\\FizzBuzzTreeTest",
     "\\data-structures",
-    "\\data-structures\\StacksAndQueues",
-    "\\data-structures\\StacksAndQueues\\StacksAndQueues",
     "\\data-structures\\Tree",
     "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\TreeTest"
+    "\\data-structures\\Tree\\Trees\\Classes"
   ],
-  "SelectedNode": "\\challenges\\FizzBuzzTree\\FizzBuzzTree\\Classes\\FizzBuzzTree.cs",
+  "SelectedNode": "\\data-structures\\Tree\\README.md",
   "PreviewInSolutionExplorer": false
 }

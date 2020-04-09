@@ -12,11 +12,13 @@
 
 ## Approach & Efficiency
 * Big O; Time and Space
-    * `pre_order()` - O(n)
-    * `in_order()` - O(n)
-    * `post_order()` - O(n)
+    * `pre_order()` - O(H)
+    * `in_order()` - O(H)
+    * `post_order()` - O(H)
+    * `breadthfirst()` - O(n)
     * `add(value)` - O(H)
     * `contains(value)` - O(H)
+    * `findmaximumvalue()` - O(n)
 
 ## API
 * `class Node` - with value, left, and right attributes
@@ -25,6 +27,8 @@
     * `pre_order()` 
     * `in_order()`
     * `post_order()`
+    * `breadthfirst()`
+    * `findmaximumvalue()`
 
 * `class BinarySeachTree` - extends from `BinaryTree`
     * `add(value)` - places node in correct position (lowest on left; highest on right)
