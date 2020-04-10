@@ -34,3 +34,10 @@
 * `class BinarySeachTree` - extends from `BinaryTree`
     * `add(value)` - places node in correct position (lowest on left; highest on right)
     * `contains(value)` - returns boolean if value exists in the tree
+
+## Whiteboard
+* `breadthfirst`
+![](assets/breadth.jpg)
+
+* `findmaxvalue`
+![](assets/findmaxvalue.jpg)
