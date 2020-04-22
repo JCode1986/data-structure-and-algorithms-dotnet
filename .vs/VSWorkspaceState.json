@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures",
     "\\data-structures\\Tree",
     "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\Trees\\Classes"
+    "\\data-structures\\Tree\\Trees\\Classes",
+    "\\sorts"
   ],
-  "SelectedNode": "\\data-structures\\Tree\\README.md",
+  "SelectedNode": "\\sorts\\merge-sort",
   "PreviewInSolutionExplorer": false
 }
