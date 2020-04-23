@@ -22,6 +22,9 @@
 
 * Best Case: The best case occurs when the partition process always picks the middle element as pivot.
 
+### Whiteboard
+* Shows the partitioning process. Pick a different pivot after all the elements have been seen and compare to pivot.
+![Quick Sort](assets/quicksort.jpg)
 ### Psuedo Code
 ```
 ALGORITHM QuickSort(arr, left, right)
