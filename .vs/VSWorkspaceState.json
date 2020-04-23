@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\sorts",
-    "\\sorts\\quick-sort\\assets"
+    "\\data-structures\\Tree",
+    "\\data-structures\\Tree\\Trees",
+    "\\data-structures\\Tree\\Trees\\Classes",
+    "\\sorts"
   ],
-  "SelectedNode": "\\sorts\\quick-sort",
+  "SelectedNode": "\\sorts\\merge-sort",
   "PreviewInSolutionExplorer": false
 }
