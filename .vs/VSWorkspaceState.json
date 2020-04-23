@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures",
-    "\\data-structures\\Tree",
-    "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\Trees\\Classes"
+    "\\sorts",
+    "\\sorts\\quick-sort\\assets"
   ],
-  "SelectedNode": "\\data-structures\\Tree\\README.md",
+  "SelectedNode": "\\sorts\\quick-sort",
   "PreviewInSolutionExplorer": false
 }
