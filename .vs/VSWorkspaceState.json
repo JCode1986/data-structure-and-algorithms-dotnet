@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures\\Tree",
-    "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\Trees\\Classes",
-    "\\sorts"
+    "\\data-structures\\HashTable",
+    "\\sorts\\insertion-sort"
   ],
-  "SelectedNode": "\\sorts\\merge-sort",
+  "SelectedNode": "\\data-structures",
   "PreviewInSolutionExplorer": false
 }
