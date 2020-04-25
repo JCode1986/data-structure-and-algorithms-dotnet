@@ -46,5 +46,29 @@ namespace XUnitTestHashTable
             }
             Assert.Equal(value, NodeValue[0]);
         }
+
+        [Theory]
+        [InlineData("key")]
+        [InlineData("boop")]
+        [InlineData("pow")]
+        public void ReturnsTrueIfKeyExistsInHashTable(string key)
+        {
+            MyHashTable<object> table = new MyHashTable<object>(50);
+            table.Add(key, "value");
+            bool actual = table.contains(key);
+            Assert.True(actual);
+        }
+
+        [Theory]
+        [InlineData("key")]
+        [InlineData("boop")]
+        [InlineData("pow")]
+        public void ReturnsFalseIfKeyExistsInHashTable(string key)
+        {
+            MyHashTable<object> table = new MyHashTable<object>(50);
+            table.Add(key, "value");
+            bool actual = table.contains("False!!!!!");
+            Assert.False(actual);
+        }
     }
 }

@@ -52,7 +52,28 @@ namespace HashTable.Classes
             }
 
             //Inserts node key pair value at the end of the linked list in bucket
-            Table[hashedkey].AddFirst(new Node(key, value));
+            Table[hashedkey].AddLast(new Node(key, value));
+        }
+
+        /// <summary>
+        /// Returns boolean if node exists in hash table
+        /// </summary>
+        /// <param name="key">string</param>
+        /// <returns>boolean</returns>
+        public bool contains(string key)
+        {
+            int hashedkey = Hash(key);
+            if (Table[hashedkey] != null)
+            {
+                foreach(var node in Table[hashedkey])
+                {
+                    if (node.Key == key)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 }
