@@ -75,5 +75,26 @@ namespace HashTable.Classes
             }
             return false;
         }
+
+        /// <summary>
+        /// Method that takes in a key as an argument and returns value in the Hash Table
+        /// </summary>
+        /// <param name="key">string</param>
+        /// <returns>string</returns>
+        public string Get(string key)
+        {
+            int hashedkey = Hash(key);
+            if (Table[hashedkey] != null)
+            {
+                foreach(var node in Table[hashedkey])
+                {
+                    if (node.Key == key)
+                    {
+                        return node.Value;
+                    }
+                }
+            }
+            return "Key not found";
+        }
     }
 }
