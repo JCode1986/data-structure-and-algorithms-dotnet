@@ -1,5 +1,7 @@
 using HashTable.Classes;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace XUnitTestHashTable
@@ -10,7 +12,7 @@ namespace XUnitTestHashTable
         public void CanInstantiateHashTableWithSize()
         {
             MyHashTable<object> table = new MyHashTable<object>(50);
-            Assert.Equal(50, table.Table.Length);
+            Assert.Equal(50, table.Size);
         }
 
         [Theory]
@@ -24,6 +26,25 @@ namespace XUnitTestHashTable
             MyHashTable<object> table = new MyHashTable<object>(41);
             int actual = table.Hash(key);
             Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("Hello", "Foo")]
+        [InlineData("Bar", "Hello")]
+        [InlineData("You", "There?")]
+        [InlineData("Key", "Value")]
+        [InlineData("Value", "Key")]
+        public void CanAddToHashTable(string key, string value)
+        {
+            MyHashTable<object> table = new MyHashTable<object>(1);
+            table.Add(key, value);
+            var bucket = table.Table[0].ToList();
+            List<string> NodeValue = new List<string>();
+            foreach (var node in bucket)
+            {
+                NodeValue.Add(node.Value);
+            }
+            Assert.Equal(value, NodeValue[0]);
         }
     }
 }
