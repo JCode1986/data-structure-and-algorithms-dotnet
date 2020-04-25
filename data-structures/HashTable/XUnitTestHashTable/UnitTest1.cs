@@ -90,7 +90,7 @@ namespace XUnitTestHashTable
         [InlineData("pink", "brown")]
         [InlineData("green", "white")]
         [InlineData("coffee", "is amazing")]
-        public void CanGetValueWithCollisions(string key, string value)
+        public void HandlesCollisionsProperly(string key, string value)
         {
             MyHashTable<object> collisionTable = new MyHashTable<object>(1);
             for (int i = 0; i < 8; i++)
@@ -99,6 +99,13 @@ namespace XUnitTestHashTable
             }
             string actual = collisionTable.Get(key);
             Assert.Equal(value, actual);
+        }
+
+        [Fact]
+        public void ReturnsNullIfKeyNotInHashTable()
+        {
+            MyHashTable<object> table = new MyHashTable<object>(3);
+            Assert.Null(table.Get("Null"));
         }
     }
 }

@@ -97,7 +97,7 @@ namespace HashTable.Classes
                     }
                 }
             }
-            return "Key not found";
+            return null;
         }
     }
 }
