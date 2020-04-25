@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort.csproj", "{4CCCFE2B-9015-49EA-B1D2-2A3B431A405C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortTest", "..\QuickSortTest\QuickSortTest.csproj", "{E619E35E-8737-465A-83C1-B53C2DEA1CCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CCCFE2B-9015-49EA-B1D2-2A3B431A405C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCCFE2B-9015-49EA-B1D2-2A3B431A405C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCCFE2B-9015-49EA-B1D2-2A3B431A405C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCCFE2B-9015-49EA-B1D2-2A3B431A405C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E619E35E-8737-465A-83C1-B53C2DEA1CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E619E35E-8737-465A-83C1-B53C2DEA1CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E619E35E-8737-465A-83C1-B53C2DEA1CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E619E35E-8737-465A-83C1-B53C2DEA1CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37844584-95D0-4F59-828E-6B37CB4EFAC8}
+	EndGlobalSection
+EndGlobal
