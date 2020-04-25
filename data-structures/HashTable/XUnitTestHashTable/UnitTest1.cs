@@ -41,13 +41,8 @@ namespace XUnitTestHashTable
         {
             MyHashTable<object> table = new MyHashTable<object>(1);
             table.Add(key, value);
-            var bucket = table.Table[0].ToList();
-            List<string> NodeValue = new List<string>();
-            foreach (var node in bucket)
-            {
-                NodeValue.Add(node.Value);
-            }
-            Assert.Equal(value, NodeValue[0]);
+            string actual = table.Get(key);
+            Assert.Equal(value, actual);
         }
 
         [Theory]

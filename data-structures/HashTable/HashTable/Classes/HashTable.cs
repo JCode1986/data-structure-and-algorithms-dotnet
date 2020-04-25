@@ -29,10 +29,13 @@ namespace HashTable.Classes
         {
             int hashedKey = 0;
 
-            foreach (char character in key.ToString())
+            //iterate through every character in string and add to hashedkey
+            foreach (char character in key)
             {
-                hashedKey += Convert.ToInt32(character);
+                hashedKey += character;
             }
+
+            //return index
             return (hashedKey * 599) % Table.Length;
         }
 
