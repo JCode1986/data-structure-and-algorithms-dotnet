@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges"
+    "\\challenges",
+    "\\challenges\\RepeatedWord",
+    "\\data-structures",
+    "\\data-structures\\HashTable",
+    "\\data-structures\\HashTable\\XUnitTestHashTable"
   ],
-  "SelectedNode": "\\challenges\\RepeatedWord",
+  "SelectedNode": "\\data-structures\\HashTable\\XUnitTestHashTable\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
