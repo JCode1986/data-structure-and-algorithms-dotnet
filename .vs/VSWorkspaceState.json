@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures\\HashTable",
-    "\\sorts\\insertion-sort"
+    "\\challenges"
   ],
-  "SelectedNode": "\\data-structures",
+  "SelectedNode": "\\challenges\\RepeatedWord",
   "PreviewInSolutionExplorer": false
 }
