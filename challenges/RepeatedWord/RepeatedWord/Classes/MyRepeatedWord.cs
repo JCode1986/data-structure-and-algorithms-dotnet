@@ -20,11 +20,11 @@ namespace RepeatedWord.Classes
             string[] words = sentence.Split(' ');
             foreach(string word in words)
             {
-                if(HT.Get("index") == word)
+                if(HT.Get(word) == "value here")
                 {
-                    return HT.Get("index");
+                    return word;
                 }
-                HT.Add("index", word);
+                HT.Add(word, "value here");
             }
             return null;
         }
