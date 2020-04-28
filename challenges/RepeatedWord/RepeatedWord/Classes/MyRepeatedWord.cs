@@ -24,7 +24,7 @@ namespace RepeatedWord.Classes
                 {
                     return word;
                 }
-                HT.Add(word, "value here");
+                HT.Add(word.ToLower(), "value here");
             }
             return null;
         }
