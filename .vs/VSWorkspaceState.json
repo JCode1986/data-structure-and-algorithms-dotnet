@@ -1,9 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\challenges",
+    "\\challenges\\MultiBracketValidation",
+    "\\challenges\\MultiBracketValidation\\MultiBracketValidation",
+    "\\challenges\\MultiBracketValidation\\MultiBracketValidation\\Classes",
+    "\\challenges\\RepeatedWord",
+    "\\challenges\\RepeatedWord\\RepeatedWord",
+    "\\challenges\\RepeatedWord\\XUnitTestRepeatedWord",
+    "\\data-structures",
     "\\data-structures\\HashTable",
-    "\\sorts\\insertion-sort"
+    "\\data-structures\\HashTable\\HashTable",
+    "\\data-structures\\HashTable\\HashTable\\Classes"
   ],
-  "SelectedNode": "\\data-structures",
   "PreviewInSolutionExplorer": false
 }
