@@ -15,10 +15,10 @@ Find common values in 2 Binary Trees
 
 | Time | Space |
 | :----------- | :----------- |
-| O(n) | O(1) |
+| O(n) | O(n) |
 
 ---
 
 
 ### Whiteboard Visual
-![Whiteboard]()
+![Whiteboard](Assets/TreeIntersection.jpg)

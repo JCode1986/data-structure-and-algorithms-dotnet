@@ -2,16 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\TreeIntersection",
-    "\\challenges\\TreeIntersection\\TreeIntersection",
-    "\\challenges\\TreeIntersection\\TreeIntersection\\Classes",
-    "\\data-structures\\HashTable\\HashTable",
-    "\\data-structures\\HashTable\\HashTable\\Classes",
-    "\\data-structures\\HashTable\\XUnitTestHashTable",
+    "\\challenges\\RepeatedWord",
+    "\\challenges\\RepeatedWord\\assets",
+    "\\challenges\\RepeatedWord\\XUnitTestRepeatedWord",
+    "\\data-structures",
+    "\\data-structures\\HashTable",
     "\\data-structures\\Tree",
     "\\data-structures\\Tree\\Trees",
     "\\data-structures\\Tree\\Trees\\Classes"
   ],
-  "SelectedNode": "\\data-structures",
+  "SelectedNode": "\\challenges\\RepeatedWord\\XUnitTestRepeatedWord\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
