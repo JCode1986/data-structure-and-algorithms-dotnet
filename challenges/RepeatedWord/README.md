@@ -26,10 +26,10 @@ Find the first repeated word in a book.
 
 | Time | Space |
 | :----------- | :----------- |
-| O(n) | O(1) |
+| O(n) | O(n) |
 
 ---
 
 
 ### Whiteboard Visual
-![Whiteboard]()
+![Whiteboard](assets/RW.jpg)
