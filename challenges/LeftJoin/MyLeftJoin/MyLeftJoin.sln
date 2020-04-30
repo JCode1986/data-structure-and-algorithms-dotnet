@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLeftJoin", "MyLeftJoin.csproj", "{F9407C88-A691-4ED8-8746-50E64C53A435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestLeftJoin", "..\XUnitTestLeftJoin\XUnitTestLeftJoin.csproj", "{87CCEC99-8678-4159-B7B6-ADA91C1E7DAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9407C88-A691-4ED8-8746-50E64C53A435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9407C88-A691-4ED8-8746-50E64C53A435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9407C88-A691-4ED8-8746-50E64C53A435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9407C88-A691-4ED8-8746-50E64C53A435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CCEC99-8678-4159-B7B6-ADA91C1E7DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CCEC99-8678-4159-B7B6-ADA91C1E7DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CCEC99-8678-4159-B7B6-ADA91C1E7DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CCEC99-8678-4159-B7B6-ADA91C1E7DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E42901BE-72F0-4992-A155-5115CA901386}
+	EndGlobalSection
+EndGlobal

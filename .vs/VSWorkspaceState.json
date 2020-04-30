@@ -2,15 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\RepeatedWord",
-    "\\challenges\\RepeatedWord\\assets",
-    "\\challenges\\RepeatedWord\\XUnitTestRepeatedWord",
-    "\\data-structures",
-    "\\data-structures\\HashTable",
-    "\\data-structures\\Tree",
-    "\\data-structures\\Tree\\Trees",
-    "\\data-structures\\Tree\\Trees\\Classes"
+    "\\challenges\\LeftJoin",
+    "\\challenges\\LeftJoin\\MyLeftJoin",
+    "\\challenges\\LeftJoin\\MyLeftJoin\\Classes"
   ],
-  "SelectedNode": "\\challenges\\RepeatedWord\\XUnitTestRepeatedWord\\UnitTest1.cs",
+  "SelectedNode": "\\challenges\\LeftJoin\\MyLeftJoin\\Classes\\LeftJoin.cs",
   "PreviewInSolutionExplorer": false
 }
