@@ -28,4 +28,4 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     * `AddEdge(start, end, weight)`: O(1)
     * `GetNodes()`: O(n)
     * `GetNeighbors(node)`: O(1)
-    * `Size(key)`: O(1)
+    * `Size()`: O(1)
