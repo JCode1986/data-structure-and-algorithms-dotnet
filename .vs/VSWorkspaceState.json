@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
-    "\\challenges\\LeftJoin",
-    "\\challenges\\LeftJoin\\MyLeftJoin",
-    "\\challenges\\LeftJoin\\MyLeftJoin\\Classes"
+    "\\challenges\\LeftJoin\\MyLeftJoin\\Classes",
+    "\\data-structures"
   ],
-  "SelectedNode": "\\challenges\\LeftJoin\\MyLeftJoin\\Classes\\LeftJoin.cs",
+  "SelectedNode": "\\data-structures\\Graph",
   "PreviewInSolutionExplorer": false
 }
