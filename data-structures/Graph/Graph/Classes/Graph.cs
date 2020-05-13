@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Graph.Classes
@@ -109,6 +110,60 @@ namespace Graph.Classes
             }
             result += "null";
             return result;
+        }
+
+        /// <summary>
+        /// Return a collection of nodes in the order (level-order) they were visited.
+        /// </summary>
+        public void BreadthFirst(Vertex vertex)
+        {
+            List<Vertex> vertices = new Vertex();
+            Queue Q = new Queue();
+            Q.Enqueue(vertex);
+
+            while(Q.Count != 0)
+            {
+                Vertex front = Q.Dequeue();
+                vertices.Add(front);
+                
+                foreach (var child in GetNeighbors(front))
+                {
+                    child.visited = true;
+                    Q.Enqueue(child);
+                }
+            }
+            foreach(var vertex in AdjacencyList)
+            {
+                vertex = false;
+            }
+            return vertices;
+        }
+        
+        /// <summary>
+        /// Return a collection of nodes in the order (depth-order) they were visited.
+        /// </summary>
+        public void DepthFirst(Vertex vertex)
+        {
+            List<Vertex> vertices = new Vertex();
+            Stack S = new Stack();
+            S.Append(vertex);
+
+            while(S.Count != 0)
+            {
+                Vertex top = S.Pop();
+                vertices.Add(top);
+                
+                foreach (var child in GetNeighbors(top))
+                {
+                    child.visited = true;
+                    S.Append(child);
+                }
+            }
+            foreach(var vertex in AdjacencyList)
+            {
+                vertex.visited = false;
+            }
+            return vertices;
         }
     }
 }
