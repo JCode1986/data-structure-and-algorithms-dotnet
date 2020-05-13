@@ -21,6 +21,10 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
    * Include the weight of the connection in the returned collection
 * Size()
    * Returns the total number of nodes in the graph
+ * BreadthFirst()
+    * Return a collection of nodes in the order (level-order) they were visited.
+* DepthFirst()
+    * Return a collection of nodes in the order (depth-order) they were visited.
 
 ## Approach & Efficiency
 * `class Graph`
@@ -29,3 +33,4 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     * `GetNodes()`: O(n)
     * `GetNeighbors(node)`: O(1)
     * `Size()`: O(1)
+
