@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -115,26 +116,26 @@ namespace Graph.Classes
         /// <summary>
         /// Return a collection of nodes in the order (level-order) they were visited.
         /// </summary>
-        public void BreadthFirst(Vertex vertex)
+        public List<Vertex<T>> BreadthFirst(Vertex<T> vertex)
         {
-            List<Vertex> vertices = new Vertex();
+            List<Vertex<T>> vertices = new List<Vertex<T>>();
             Queue Q = new Queue();
             Q.Enqueue(vertex);
 
             while(Q.Count != 0)
             {
-                Vertex front = Q.Dequeue();
+                Vertex<T> front = (Vertex<T>)Q.Dequeue();
                 vertices.Add(front);
                 
                 foreach (var child in GetNeighbors(front))
                 {
-                    child.visited = true;
+                    child.Vertex.Visited = true;
                     Q.Enqueue(child);
                 }
             }
-            foreach(var vertex in AdjacencyList)
+            foreach(var node in AdjacencyList)
             {
-                vertex = false;
+                node.Key.Visited = false;
             }
             return vertices;
         }
@@ -142,28 +143,45 @@ namespace Graph.Classes
         /// <summary>
         /// Return a collection of nodes in the order (depth-order) they were visited.
         /// </summary>
-        public void DepthFirst(Vertex vertex)
+        public List<Vertex<T>> DepthFirst(Vertex<T> vertex)
         {
-            List<Vertex> vertices = new Vertex();
+            List<Vertex<T>> vertices = new List<Vertex<T>>();
             Stack S = new Stack();
-            S.Append(vertex);
+            S.Push(vertex);
 
             while(S.Count != 0)
             {
-                Vertex top = S.Pop();
+                Vertex<T> top = (Vertex<T>)S.Pop();
                 vertices.Add(top);
                 
                 foreach (var child in GetNeighbors(top))
                 {
-                    child.visited = true;
-                    S.Append(child);
+                    child.Vertex.Visited = true;
+                    S.Push(child);
                 }
             }
-            foreach(var vertex in AdjacencyList)
+            foreach(var node in AdjacencyList)
             {
-                vertex.visited = false;
+                node.Key.Visited = false;
             }
             return vertices;
+        }
+
+        /// <summary>
+        /// Returns string if its possible to get from one node to another, and also retrieves edge
+        /// </summary>
+        /// <param name="vertices"></param>
+        /// <returns></returns>
+        public string GetEdge(Vertex<T> startVertex, Vertex<T> endVertex)
+        {
+            List<Vertex<T>> flight = BreadthFirst(startVertex);
+
+            if (flight.Contains(endVertex))
+            {
+                return $"True, ${GetNeighbors(endVertex)}";
+            }
+
+            return "False, $0";
         }
     }
 }
