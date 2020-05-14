@@ -28,6 +28,8 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     * Return a collection of nodes in the order (level-order) they were visited.
 * DepthFirst()
     * Return a collection of nodes in the order (depth-order) they were visited.
+* GetEdge()
+  * Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
 
 ## Approach & Efficiency
 * `class Graph`
