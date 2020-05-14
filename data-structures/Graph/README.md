@@ -35,4 +35,7 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     * `GetNodes()`: O(n)
     * `GetNeighbors(node)`: O(1)
     * `Size()`: O(1)
+    * `DepthFirst()`: O(n)
+    * `BreadthFirst()`: O(n)
+    * `GetEdge()`: O(n)
 
