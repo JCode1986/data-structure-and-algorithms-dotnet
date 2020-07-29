@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures",
-    "\\data-structures\\Graph",
-    "\\data-structures\\Graph\\Graph",
-    "\\data-structures\\Graph\\Graph\\Classes"
+    "\\challenges\\ArrayShift"
   ],
-  "SelectedNode": "\\data-structures\\Graph\\Graph\\Classes\\Graph.cs",
+  "SelectedNode": "\\challenges",
   "PreviewInSolutionExplorer": false
 }
