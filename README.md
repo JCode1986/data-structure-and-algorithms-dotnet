@@ -18,9 +18,8 @@
 </details>
 
 <details>
-<summary>Sorts</summary>
+<summary>## Sorts</summary>
 
-## Sorts
 * [Insertion Sort]()
 * [Bubble Sort]()
 * [Quick Sort]()
