@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges\\ArrayShift"
+    "\\sorts",
+    "\\sorts\\insertion-sort",
+    "\\sorts\\insertion-sort\\InsertionSort\\Classes"
   ],
-  "SelectedNode": "\\challenges",
+  "SelectedNode": "\\sorts\\insertion-sort\\BLOG.md",
   "PreviewInSolutionExplorer": false
 }
