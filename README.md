@@ -1,9 +1,8 @@
 # Table of Contents
 
 <details>
-<summary>Easy</summary>
+<summary>Challenges</summary>
 
-## Challenges
 * [Array Reverse](https://github.com/JCode1986/data-structure-and-algorithms-dotnet/tree/master/challenges/ArrayReverse)
 * [Array Shift](https://github.com/JCode1986/data-structure-and-algorithms-dotnet/tree/master/challenges/ArrayShift)
 * [Array Binary Search](https://github.com/JCode1986/data-structure-and-algorithms-dotnet/tree/master/challenges/ArrayBinarySearch/BinarySearch)
@@ -12,15 +11,14 @@
 </details>
 
 <details>
-<summary>Easy</summary>
+<summary>Data Structures</summary>
 
-## Data Structures
 * [Linked List](https://github.com/JCode1986/data-structure-and-algorithms-dotnet/tree/master/data-structures/LinkList)
 
 </details>
 
 <details>
-<summary>Easy</summary>
+<summary>Sorts</summary>
 
 ## Sorts
 * [Insertion Sort]()
